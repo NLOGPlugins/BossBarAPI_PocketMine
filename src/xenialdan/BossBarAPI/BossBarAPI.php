@@ -15,6 +15,7 @@ class BossBarAPI{
 
 	public static function unregisterBossBar($owner){
 		if(isset(self::$bossBarList[$owner])){
+			self::$bossBarList[$owner]->setVisible(false);
 			unset(self::$bossBarList[$owner]);
 			return true;
 		}
