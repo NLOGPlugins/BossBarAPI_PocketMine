@@ -6,7 +6,7 @@ use pocketmine\utils\Binary;
 use pocketmine\network\protocol\DataPacket;
 
 class SetEntityDataPacket extends DataPacket{
-	const NETWORK_ID = 0x26;
+	const NETWORK_ID = 0x27;
 	public $eid;
 	public $metadata;
 
